@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>検索ページ</title>
+    <link rel="stylesheet" href="google2.css">
+</head>
+
+<body>
+
+    <h1>検索ページ</h1>
+
+    <!-- 検索フォーム -->
+    <form method="GET" action="google2.php" class="search-form">
+
+        <!-- キーワード検索 + 検索ボタン（横並び） -->
+        <div class="search-row">
+            <input type="text" name="query" placeholder="検索ワードを入力">
+            <input type="submit" value="検索">
+        </div>
+
+        <!-- 詳細検索（下に表示） -->
+        <div class="advanced-search">
+            <h2>詳細検索</h2>
+
+            <label>
+                カテゴリ:
+                <select name="sort">
+                    <option value="newest">新しい順</option>
+                    <option value="oldest">古い順</option>
+                </select>
+            </label>
+
+            <label>
+                投稿日:
+                <input type="date" name="date_from"> ～
+                <input type="date" name="date_to">
+            </label>
+
+            <label>
+                並び順:
+                <select name="sort">
+                    <option value="newest">新しい順</option>
+                    <option value="oldest">古い順</option>
+                </select>
+            </label>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

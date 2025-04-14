@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+
+<head>
+    <meta name="keywords" content="文科省,文部科学省,食品,食品成分,日本食品標準成分表">
+    <meta name="description" content="食品成分データベースは、食品成分に関するデータをインターネットを通じて提供しているものです。 ">
+    <link rel="canonical" href="https://fooddb.mext.go.jp/">
+    <link rel="prefetch" href="search.html">
+    <title>食品データベース</title>
+    <link rel="stylesheet" href="google2.css">
+</head>
+
+<body>
+    <h1>検索ページ</h1>
+
+    <!-- 検索フォーム -->
+    <form method="GET" action="action.php" class="search-form">
+
+        <!-- キーワード検索 + 検索ボタン（横並び） -->
+        <div class="search-row">
+            <input type="text" name="query" placeholder="検索ワードを入力">
+            <input type="submit" value="検索">
+        </div>
+        <br></br>
+        <!-- キーワード（下に表示） -->
+        <div class="advanced-search">
+            <h2>詳細検索</h2>
+        </div>
+        <!-- 詳細検索（下に表示） -->
+        <div class="advanced-search">
+            <h3>除外キーワード</h3>
+            <div class="search-row">
+                <input type="text" name="query" placeholder="検索ワードを入力">
+            </div>
+            <div class="alignment">
+                <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                    <?= htmlspecialchars($category1) ?>
+                </label>
+                完全一致
+                <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                    <?= htmlspecialchars($category1) ?>
+                </label>
+                部分一致
+            </div>
+            <h3>成分量</h3>
+            <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                <?= htmlspecialchars($category1) ?>
+                エネルギー
+                <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                    <?= htmlspecialchars($category1) ?>
+                    タンパク質
+                    <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                        <?= htmlspecialchars($category1) ?>
+                        脂質
+                        <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                            <?= htmlspecialchars($category1) ?>
+                            炭水化物
+                            <label><input type="checkbox" name="category[]" value="<?= htmlspecialchars($category1) ?>">
+                                <?= htmlspecialchars($category1) ?>
+                                ビタミン
+                                <label><input type="checkbox" name="category[]"
+                                        value="<?= htmlspecialchars($category1) ?>">
+                                    <?= htmlspecialchars($category1) ?>
+                                    アルコール
+                                    <label><input type="checkbox" name="category[]"
+                                            value="<?= htmlspecialchars($category1) ?>">
+                                        <?= htmlspecialchars($category1) ?>
+                                        塩分
+                                        </select>
+                                    </label>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+
+.jqmWindow {
+  display: none;
+
+  position: fixed;
+  top: 17%;
+
+  margin-left: 15%;
+  margin-right: auto;
+  width: 70%;
+
+  background-color: #fff;
+  color: #000;
+  border: 1px outset #999;
+  padding: 12px;
+
+  /* font-size: x-small; */
+  font-size: 0.8em;
+
+  z-index: 10;
+  opacity: 0.9;
+
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+
+.jqmWindow h2 {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.jqmOverlay {
+  background-color: #111;
+}

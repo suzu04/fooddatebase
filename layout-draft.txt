@@ -1,0 +1,3 @@
+fooddb-clone/          ← 任意のプロジェクト名フォルダ
+├── index.html         ← メインのHTMLファイル
+└── style.css          ← CSSのスタイルファイル

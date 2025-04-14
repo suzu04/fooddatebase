@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>シンプル検索ページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+
+        .search-box {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .results {
+            margin-top: 40px;
+        }
+
+        .result-item {
+            text-align: left;
+            background: white;
+            margin: 10px auto;
+            padding: 15px;
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>シンプル検索</h1>
+    <div class="search-box">
+        <form id="searchForm">
+            <input type="text" id="query" placeholder="検索ワードを入力">
+            <input type="submit" value="検索">
+        </form>
+    </div>
+    <div class="results" id="results"></div>
+
+    <script>
+        const sampleResults = [
+            { title: "検索結果1", url: "#", snippet: "これは検索結果の例です。Googleっぽく表示。" },
+            { title: "検索結果2", url: "#", snippet: "もうひとつの結果。自由にカスタマイズ可能。" },
+            { title: "検索結果3", url: "#", snippet: "これはダミーデータです。" }
+        ];
+
+        document.getElementById("searchForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const query = document.getElementById("query").value;
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (query.trim() === "") {
+                resultsDiv.innerHTML = "<p>検索語を入力してください。</p>";
+                return;
+            }
+
+            sampleResults.forEach(result => {
+                const div = document.createElement("div");
+                div.className = "result-item";
+                div.innerHTML = `<h3><a href="${result.url}">${result.title}</a></h3><p>${result.snippet}</p>`;
+                resultsDiv.appendChild(div);
+            });
+        });
+    </script>
+</body>
+
+</html>
