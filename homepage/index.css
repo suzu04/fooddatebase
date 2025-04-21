@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------------- *
+  announce 2010/01/12
+ * ---------------------------------------------------------------- */
+div.announce {
+  clear: both;
+  width: 836px;
+  margin: 10px;
+  padding-top: 6px;
+  padding-left: 24px;
+  background: white;
+  color: #ff0000;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top: ridge 2px #f0f0f0;
+}
+
+/* ---------------------------------------------------------------- *
+  ranking
+ * ---------------------------------------------------------------- */
+H2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#ranking {
+  clear: both;
+  width: 860px;
+  margin: 10px;
+  height: auto !important;
+  overflow: hidden;
+  background: white;
+}
+
+#rank-left {
+  float: left;
+  width: 420px;
+  text-align: left;
+}
+
+#rank-right {
+  float: right;
+  width: 420px;
+  text-align: left;
+  height: 360px;
+}
+
+#new-left table th,
+#new-left table td {
+  /* font-size: small; */
+  font-size: 0.9em;
+}
+
+#result_acc,
+#result {
+  min-height: 15.5em;
+  overflow: auto;
+}
+
+#new,
+#new-left,
+#new-right {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#new-left table th,
+#new-left table td {
+  /* font-size: x-small; */
+  font-size: 0.8em;
+}
+
+table.whats_new {
+  width: 100%;
+}
+
+#counter {
+  margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------- *
+  new
+ * ---------------------------------------------------------------- */
+#new {
+  clear: both;
+  width: 860px;
+  margin: 10px;
+  background: white;
+}
+
+#new-left {
+  float: left;
+  width: 420px;
+  text-align: left;
+  clear: both;
+}
+
+#new-right {
+  float: right;
+  width: 420px;
+  text-align: left;
+}
+
+.hako {
+  font-size: 0.7em;
+  background: #ffffcc;
+  padding: 5px;
+  border: solid 1px #FF9E3D;
+  font-size: 90%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* ← これが標準プロパティ */
+}
+
+
+/* ---------------------------------------------------------------- *
+  attention
+ * ---------------------------------------------------------------- */
+#attention {
+  clear: both;
+  width: 860px;
+  margin: 10px;
+  height: auto !important;
+  overflow: auto;
+  background: white;
+}
